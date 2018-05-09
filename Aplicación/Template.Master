@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.Master.cs" Inherits="slAvanzaPruebaSantiagoMartinez.template" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Editar Empleado</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="public/css/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+        <div class="panel-primary">
+            <div class="panel-heading text-center">Prueba técnica Avanza Colombia - Santiago Martínez</div>
+
+            <ul class="nav nav-tabs">
+                <li role="presentation" runat="server" id="link1"><asp:HyperLink runat="server" NavigateUrl="~/Default.aspx">Nuevo</asp:HyperLink></li>
+                <li role="presentation" runat="server" id="link2"><asp:HyperLink runat="server" NavigateUrl="~/View.aspx">Existentes</asp:HyperLink></li>
+            </ul>
+
+         <div class="panel-body">
+            <asp:ContentPlaceHolder ID="contenido" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="public/js/jquery.js"></script>
+    <script type="text/javascript" src="public/js/funciones.js"></script>
+    <asp:ContentPlaceHolder ID="script" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
